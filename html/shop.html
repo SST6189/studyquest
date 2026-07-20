@@ -1,0 +1,579 @@
+<!doctype html>
+<html>
+  <head>
+    <title>StudyCircuit - Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="html/index.html">Dashboard</a>
+      <a href="html/tasks.html">Tasks</a>
+      <a href="html/apartment.html">Apartment</a>
+      <a href="html/shop.html" class="active">Shop</a>
+    </nav>
+
+    <h1>Shop</h1>
+
+    <section class="store-overview">
+      <p>
+        Earn coins by completing tasks, then use them to unlock avatar styles
+        and apartment upgrades.
+      </p>
+      <p class="shop-balance">
+        Your Coins: <strong id="shop-coin-total">0</strong>
+      </p>
+      <p id="shop-status" class="shop-status">Select an item to purchase.</p>
+    </section>
+
+    <section class="store-category">
+      <h2>Avatar Customization</h2>
+      <p>Customize your avatar with a variety of hairstyles and accessories.</p>
+      <h3>Skins</h3>
+      <div class="store-tier shop-items">
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/avatars/skin-1.png" alt="Skin 1" />
+            <div>
+              <h3>Skin 1</h3>
+            </div>
+          </div>
+          <button
+            data-item="skin-1"
+            data-type="avatar"
+            data-src="assets/avatars/skin-1.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/avatars/skin-2.png" alt="Skin 2" />
+            <div>
+              <h3>Skin 2</h3>
+            </div>
+          </div>
+          <button
+            data-item="skin-2"
+            data-type="avatar"
+            data-src="assets/avatars/skin-2.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/avatars/skin-3.png" alt="Skin 3" />
+            <div>
+              <h3>Skin 3</h3>
+            </div>
+          </div>
+          <button
+            data-item="skin-3"
+            data-type="avatar"
+            data-src="assets/avatars/skin-3.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/avatars/skin-4.png" alt="Skin 4" />
+            <div>
+              <h3>Skin 4</h3>
+            </div>
+          </div>
+          <button
+            data-item="skin-4"
+            data-type="avatar"
+            data-src="assets/avatars/skin-4.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+      </div>
+      <h3>Hair Styles</h3>
+      <div class="store-tier shop-items">
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/hair/hair-1.png" alt="Hair 1 preview" />
+            <div>
+              <h3>Hair 1</h3>
+            </div>
+          </div>
+          <button
+            data-item="hair-1"
+            data-type="hair"
+            data-src="assets/hair/hair-1.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/hair/hair-2.png" alt="Hair 2 preview" />
+            <div>
+              <h3>Hair 2</h3>
+            </div>
+          </div>
+          <button
+            data-item="hair-2"
+            data-type="hair"
+            data-src="assets/hair/hair-2.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/hair/hair-3.png" alt="Hair 3 preview" />
+            <div>
+              <h3>Hair 3</h3>
+            </div>
+          </div>
+          <button
+            data-item="hair-3"
+            data-type="hair"
+            data-src="assets/hair/hair-3.png"
+            data-price="10"
+          >
+            Equip
+          </button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/hair/hair-4.png" alt="Hair 4 preview" />
+            <div>
+              <h3>Hair 4</h3>
+            </div>
+          </div>
+          <button
+            data-item="hair-4"
+            data-type="hair"
+            data-src="assets/hair/hair-4.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/hair/hair-5.png" alt="Hair 5 preview" />
+            <div>
+              <h3>Hair 5</h3>
+            </div>
+          </div>
+          <button
+            data-item="hair-5"
+            data-type="hair"
+            data-src="assets/hair/hair-5.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/hair/hair-6.png" alt="Hair 6 preview" />
+            <div>
+              <h3>Hair 6</h3>
+            </div>
+          </div>
+          <button
+            data-item="hair-6"
+            data-type="hair"
+            data-src="assets/hair/hair-6.png"
+            data-price="10"
+          >
+            Equip
+          </button>
+        </div>
+      </div>
+
+      <h3>Clothes</h3>
+      <div class="store-tier shop-items">
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/clothes/top-1.png" alt="White T-shirt preview" />
+            <div>
+              <h3>White T-Shirt</h3>
+            </div>
+          </div>
+          <button
+            data-item="top-1"
+            data-type="clothes"
+            data-src="assets/clothes/top-1.png"
+            data-price="0"
+          >
+            Equip
+          </button>
+        </div>
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/clothes/top-2.png" alt="Blue T-Shirt preview" />
+            <div>
+              <h3>Blue T-Shirt</h3>
+            </div>
+          </div>
+          <button
+            data-item="top-2"
+            data-type="clothes"
+            data-src="assets/clothes/top-2.png"
+            data-price="10"
+          >
+            Equip
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img
+              src="assets/clothes/top-3.png"
+              alt="Striped Sweatshirt preview"
+            />
+            <div>
+              <h3>Striped Sweatshirt</h3>
+            </div>
+          </div>
+          <button
+            data-item="top-3"
+            data-type="clothes"
+            data-src="assets/clothes/top-3.png"
+            data-price="15"
+          >
+            Equip
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/clothes/top-4.png" alt="Pink Sweatshirt preview" />
+            <div>
+              <h3>Pink Sweatshirt</h3>
+            </div>
+          </div>
+          <button
+            data-item="top-4"
+            data-type="clothes"
+            data-src="assets/clothes/top-4.png"
+            data-price="15"
+          >
+            Equip
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/clothes/top-5.png" alt="Blue Hoodie preview" />
+            <div>
+              <h3>Blue Hoodie</h3>
+            </div>
+          </div>
+          <button
+            data-item="top-5"
+            data-type="clothes"
+            data-src="assets/clothes/top-5.png"
+            data-price="15"
+          >
+            Equip
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/clothes/top-6.png" alt="Green Hoodie preview" />
+            <div>
+              <h3>Green Hoodie</h3>
+            </div>
+          </div>
+          <button
+            data-item="top-6"
+            data-type="clothes"
+            data-src="assets/clothes/top-6.png"
+            data-price="15"
+          >
+            Equip
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="store-category">
+      <h2>Apartment Upgrades</h2>
+      <p>Furniture, rooms, and decor items that unlock as you progress.</p>
+
+      <div class="store-tier shop-items">
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/blue-sofa.png" alt="Blue Sofa" />
+            <div>
+              <h3>Blue Sofa</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="blue-sofa"
+            data-type="apartment"
+            data-src="assets/furniture/blue-sofa.png"
+            data-price="35"
+          >
+            35 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/circle-table.png" alt="Round Table" />
+            <div>
+              <h3>Round Table</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="circle-table"
+            data-type="apartment"
+            data-src="assets/furniture/circle-table.png"
+            data-price="15"
+          >
+            15 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/bookshelf.png" alt="Bookshelf" />
+            <div>
+              <h3>Bookshelf</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="bookshelf"
+            data-type="apartment"
+            data-src="assets/furniture/bookshelf.png"
+            data-price="50"
+          >
+            50 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/floor-lamp.png" alt="Floor Lamp" />
+            <div>
+              <h3>Floor Lamp</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="floor-lamp"
+            data-type="apartment"
+            data-src="assets/furniture/floor-lamp.png"
+            data-price="20"
+          >
+            20 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/television.png" alt="Television" />
+            <div>
+              <h3>Television</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="television"
+            data-type="apartment"
+            data-src="assets/furniture/television.png"
+            data-price="75"
+          >
+            75 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/whitesofa.png" alt="White Sofa" />
+            <div>
+              <h3>White Sofa</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="white-sofa"
+            data-type="apartment"
+            data-src="assets/furniture/whitesofa.png"
+            data-price="35"
+          >
+            35 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img
+              src="assets/furniture/brown-armchair.png"
+              alt="Brown Armchair"
+            />
+            <div>
+              <h3>Brown Armchair</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="brown-armchair"
+            data-type="apartment"
+            data-src="assets/furniture/brown-armchair.png"
+            data-price="40"
+          >
+            40 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img
+              src="assets/furniture/green-armchair.png"
+              alt="Green Armchair"
+            />
+            <div>
+              <h3>Green Armchair</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="green-armchair"
+            data-type="apartment"
+            data-src="assets/furniture/green-armchair.png"
+            data-price="40"
+          >
+            40 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img
+              src="assets/furniture/rectangletable.png"
+              alt="Rectangle Table"
+            />
+            <div>
+              <h3>Rectangle Table</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="rectangle-table"
+            data-type="apartment"
+            data-src="assets/furniture/rectangletable.png"
+            data-price="25"
+          >
+            25 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img
+              src="assets/furniture/table-and-chairs.png"
+              alt="Table & Chairs"
+            />
+            <div>
+              <h3>Table & Chairs</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="table-and-chairs"
+            data-type="apartment"
+            data-src="assets/furniture/table-and-chairs.png"
+            data-price="50"
+          >
+            50 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/queenbed.png" alt="Queen Bed" />
+            <div>
+              <h3>Queen Bed</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="queen-bed"
+            data-type="apartment"
+            data-src="assets/furniture/queenbed.png"
+            data-price="100"
+          >
+            100 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/twinbed.png" alt="Twin Bed" />
+            <div>
+              <h3>Twin Bed</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="twin-bed"
+            data-type="apartment"
+            data-src="assets/furniture/twinbed.png"
+            data-price="50"
+          >
+            50 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/sidecabinet.png" alt="Side Cabinet" />
+            <div>
+              <h3>Side Cabinet</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="side-cabinet"
+            data-type="apartment"
+            data-src="assets/furniture/sidecabinet.png"
+            data-price="25"
+          >
+            25 coins
+          </button>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-item-meta">
+            <img src="assets/furniture/small-plant.png" alt="Small Plant" />
+            <div>
+              <h3>Small Plant</h3>
+            </div>
+          </div>
+
+          <button
+            data-item="small-plant"
+            data-type="apartment"
+            data-src="assets/furniture/small-plant.png"
+            data-price="15"
+          >
+            15 coins
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="js/shop.js"></script>
+  </body>
+</html>

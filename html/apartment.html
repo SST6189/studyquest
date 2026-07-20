@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>StudyCircuit - Apartment</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="html/index.html">Dashboard</a>
+      <a href="html/tasks.html">Tasks</a>
+      <a href="html/apartment.html" class="active">Apartment</a>
+      <a href="html/shop.html">Shop</a>
+    </nav>
+
+    <h1>Apartment</h1>
+
+    <button id="toggle-inventory" type="button">Open Inventory</button>
+
+    <aside id="inventory-panel" class="inventory-panel closed">
+      <h2>Inventory</h2>
+      <p>Select furniture to place it in your apartment.</p>
+      <p class="apartment-help">
+        Click furniture to select. Press R to rotate. Press Delete to remove.
+      </p>
+      <div id="inventory-items"></div>
+    </aside>
+
+    <section class="apartment-layout">
+      <div class="apartment-entry"></div>
+      <div class="apartment-square" id="apartment-square"></div>
+      <img
+        class="apartment-door"
+        src="assets/furniture/door.png"
+        alt="Apartment Door"
+      />
+    </section>
+    <script src="js/apartment.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "StudyCircuit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SST6189/studyquest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SST6189/studyquest/issues"
+  },
+  "homepage": "https://github.com/SST6189/studyquest#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "openai": "^6.45.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

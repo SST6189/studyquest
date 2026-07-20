@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>StudyCircuit</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dashboard">
+    <nav>
+      <a href="html/index.html" class="active">Dashboard</a>
+      <a href="html/tasks.html">Tasks</a>
+      <a href="html/apartment.html">Apartment</a>
+      <a href="html/shop.html">Shop</a>
+    </nav>
+
+    <h1>Dashboard</h1>
+
+    <div class="dashboard-top">
+    <section class="todo-list">
+      <h2>Upcoming Tasks</h2>
+      <ul id="task-list"></ul>
+    </section>
+
+    <div class="dashboard-right-group">
+      <div id="avatar-area">
+        <div id="avatar-current">
+          <img id="selected-avatar" src="assets/avatars/skin-1.png" alt="Selected avatar" />
+          <img id="selected-hair" src="" alt="Selected hair" />
+          <img id="selected-clothes" src="" alt="Selected clothing" />
+        </div>
+      </div>
+      <div class="avatar-progress-panel">
+        <div class="level-card">
+          <span>Level</span>
+          <span id="level-total">1</span>
+        </div>
+        <div class="xp-progress-wrapper">
+          <div class="xp-progress-label">
+            <span>XP Progress</span>
+            <span id="xp-progress">0/100</span>
+          </div>
+          <div class="xp-progress-bar" aria-hidden="true">
+            <div id="xp-progress-fill" class="xp-progress-fill"></div>
+          </div>
+        </div>
+        <p class="coins-summary">Total Coins: <span id="coin-total">0</span></p>
+      </div>
+    </div>
+
+    <script src="js/tasks.js"></script>
+    <script src="js/avatarPicker.js"></script>
+  </body>
+</html>

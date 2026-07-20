@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>StudyCircuit - Tasks</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="tasks-page">
+    <nav>
+      <a href="html/index.html">Dashboard</a>
+      <a href="html/tasks.html" class="active">Tasks</a>
+      <a href="html/apartment.html">Apartment</a>
+      <a href="html/shop.html">Shop</a>
+    </nav>
+
+    <h1>All Tasks</h1>
+    <section class="todo-list">
+      <h2>To-Do</h2>
+      <div class="ai-photo-panel">
+        <h3>Homework Photo Assistant</h3>
+        <p>
+          Take a photo or upload homework to get a suggested task you can
+          review.
+        </p>
+        <div class="photo-controls">
+          <label class="photo-button" for="homework-photo-input"
+            >📷 Take / Upload Photo</label
+          >
+          <input
+            id="homework-photo-input"
+            type="file"
+            accept="image/*"
+            capture="environment"
+          />
+          <button id="analyze-homework" type="button">Suggest Task</button>
+        </div>
+        <div id="photo-preview-wrapper" class="photo-preview-wrapper" hidden>
+          <img id="homework-photo-preview" alt="Homework preview" />
+        </div>
+        <p id="ai-status" class="ai-status" aria-live="polite"></p>
+        <div id="ai-suggestion" class="ai-suggestion" hidden>
+          <h4>Suggested Task</h4>
+          <p id="suggestion-summary"></p>
+          <div id="suggestion-details"></div>
+          <div class="suggestion-actions">
+            <button id="accept-suggestion" type="button">Add to Tasks</button>
+            <button id="dismiss-suggestion" class="secondary" type="button">
+              Dismiss
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="task-form">
+        <input id="new-task" type="text" placeholder="Add a task..." />
+        <label class="task-label" for="task-deadline">Deadline</label>
+        <input id="task-deadline" type="date" />
+        <select id="task-difficulty">
+          <option value="Easy" selected>Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+        <button id="add-task" type="button">Add</button>
+      </div>
+      <ul id="task-list"></ul>
+      <div class="xp-progress-wrapper">
+        <div class="xp-progress-label">
+          <span>XP Progress</span>
+          <span id="xp-progress">0/100</span>
+        </div>
+        <div class="xp-progress-bar" aria-hidden="true">
+          <div id="xp-progress-fill" class="xp-progress-fill"></div>
+        </div>
+      </div>
+      <p>Total Coins: <span id="coin-total">0</span></p>
+    </section>
+
+    <script src="js/tasks.js?v=20260703"></script>
+  </body>
+</html>
